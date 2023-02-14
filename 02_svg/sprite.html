@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG sprite</title>
+  <style>
+    .top {
+      padding: 60px 58px 42px 57px;
+      background-color: #FFF6ED;
+      text-align: center;
+    }
+
+    .main-title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: 375px;
+    }
+
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+    }
+
+    .title span {
+      color:#FF7A00;
+    }
+
+    .descr {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .bottom {
+      position: relative;
+      display: flex;
+      padding: 60px 58px 24px 57px;
+    }
+
+    .bg {
+      position: absolute;
+      z-index: -1;
+      right: 13%;
+    }
+
+    .bottom .main-title,
+    .bottom .descr {
+      width: 592px;
+    }
+
+    .left {
+      width: 60%;
+    }
+
+    .right {
+      width: 40%;
+    }
+
+    .right-top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 70px;
+      margin-bottom: 30px;
+    }
+
+    .right-bottom {
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h2 class="main-title">
+      Как это работает?
+    </h2>
+
+    <div class="cards">
+      <div class="card">
+        <svg width="375" height="288">
+          <use xlink:href="sprite.svg#coffee"></use>
+        </svg>
+        <h3 class="title">
+          Утренний <span>кофе</span>
+        </h3>
+        <p class="descr">
+          Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее просыпаемся.
+        </p>
+      </div>
+      <div class="card">
+        <svg width="375" height="288">
+          <use xlink:href="sprite.svg#medit"></use>
+        </svg>
+        <h3 class="title">
+          Час <span>медитации</span>
+        </h3>
+        <p class="descr">
+          После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.
+        </p>
+      </div>
+      <div class="card">
+        <svg width="375" height="288">
+          <use xlink:href="sprite.svg#sprint"></use>
+        </svg>
+        <h3 class="title">
+          Вперёд к <span>свершениям!</span>
+        </h3>
+        <p class="descr">
+          Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <svg class="bg" width="550" height="275">
+      <use xlink:href="sprite.svg#bg"></use>
+    </svg>
+    <div class="left">
+      <h2 class="main-title">
+        Интеграция со сторонними сервисами
+      </h2>
+      <p class="descr">
+        Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня, контролировать свои задачи и не опоздать на запланированные встречи.
+      </p>
+    </div>
+    <div class="right">
+      <div class="right-top">
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#fb"></use>
+        </svg>
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#trello"></use>
+        </svg>
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#work"></use>
+        </svg>
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#drop"></use>
+        </svg>
+      </div>
+      <div class="right-bottom">
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#google"></use>
+        </svg>
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#trello-2"></use>
+        </svg>
+        <svg width="70" height="70">
+          <use xlink:href="sprite.svg#slack"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
