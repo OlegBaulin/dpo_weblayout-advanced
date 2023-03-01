@@ -1,0 +1,124 @@
+.projects
+  padding: 70px 0 40px
+
+  &__title
+    @include title()
+    margin-bottom: 14px
+
+  &__card
+    padding-top: 202px
+    background-position: top
+    background-size: 100% 184px
+
+  &__card-big
+    padding: 23px 308px 30px 30px
+    height: 100%
+    background-position: center
+    background-size: cover
+    color: $white
+
+  &__card,
+  &__card-big
+    position: relative
+    display: flex
+    align-items: start
+    flex-direction: column
+    background-repeat: no-repeat
+
+  &__subtitle
+    margin: 0
+    margin-bottom: 10px
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+
+  @include date()
+
+.card-big
+  &__date
+    margin-bottom: 6px
+
+  &__title
+    margin-bottom: 4px
+    font-family: 'TTFirsNeue'
+    font-weight: 700
+    font-size: 24px
+    line-height: 24px
+
+  &__text
+    margin: 0
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+
+  &__btn
+    padding: 14px 21px
+    margin-top: auto
+    border: solid 3px $orange
+
+    @include btnTranspFocus()
+    @include btnTranspHover()
+    @include btnTranspActive()
+
+  @include date()
+
+.card-1
+  background-image: url(../img/proj-1.jpg)
+
+  &::before
+    @include before()
+    content: '#пейзаж'
+    top: 6px
+    right: 7px
+
+.card-2
+  background-image: url(../img/proj-2.jpg)
+
+  &::before
+    @include before()
+    content: '#портрет'
+    top: 6px
+    right: 7px
+
+.card-3
+  background-image: url(../img/proj-3.jpg)
+
+  &::before
+    @include before()
+    content: '#предмет'
+    top: 6px
+    right: 7px
+
+.card-4
+  background-image: url(../img/proj-6.jpg)
+
+  &::before
+    @include before()
+    content: '#ретушь'
+    top: 6px
+    right: 7px
+
+.card-5
+  background-image: url(../img/proj-7.jpg)
+
+  &::before
+    @include before()
+    content: '#портрет'
+    top: 6px
+    right: 7px
+
+.card-big-1
+  background-image: url(../img/proj-4.jpg)
+  &::before
+    @include before()
+    content: '#fuji'
+    top: 6px
+    right: 7px
+
+.card-big-2
+  background-image: url(../img/proj-5.jpg)
+  &::before
+    @include before()
+    content: '#проектзабвение'
+    top: 6px
+    right: 7px
