@@ -1,0 +1,45 @@
+.header
+  padding: 24px 0 21px
+  background-color: $black
+
+  &__container
+    display: flex
+    align-items: center
+
+  &__logo
+    margin-right: 10.8%
+
+    svg
+      width: 191px
+      height: 31px
+
+  &__btn
+    width: 25px
+    height: 25px
+    svg
+      width: 25px
+      height: 25px
+
+  &__burger
+    display: none
+
+.nav
+  display: flex
+  align-items: center
+  margin-right: auto
+  &__list
+    display: flex
+    color: $white
+
+  &__item:not(:last-child)
+    margin-right: 79px
+
+  &__link
+    font-family: 'TTFirsNeue'
+    font-weight: 400
+    font-size: 16px
+    line-height: 21px
+
+    @include linkFocus()
+    @include linkHover()
+

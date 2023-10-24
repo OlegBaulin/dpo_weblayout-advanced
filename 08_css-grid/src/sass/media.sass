@@ -1,0 +1,541 @@
+@media (max-width: 1299px)
+  .container
+    max-width: 992px
+
+  // header
+  .header
+    padding: 26px 0 24px
+    &__logo
+      margin-right: 8.4%
+      svg
+        width: 166px
+        height: 27px
+
+  .nav
+    &__item:not(:last-child)
+      margin-right: 33px
+
+  // hero
+  .hero
+    padding: 34px 0 68px
+
+  .hero-left
+    padding: 425px 30px 30px
+    background-image: url(../img/hero-tablet-1.jpg)
+
+    &__text
+      margin-bottom: 9px
+
+    &__title
+      margin-bottom: 38px
+      font-size: 34px
+      line-height: 100%
+
+  .hero-card
+    &__title
+      @include title()
+      margin-bottom: 24px
+
+  // info
+  .info
+    padding: 30px 0 83px
+
+  .info-right
+    padding-top: 390px
+    background-image: url(../img/info-tablet.jpg)
+
+  .form-info
+    &__input
+      margin-bottom: 21px
+      flex-basis: 74%
+
+  // projects
+  .projects
+    &__list
+      grid-template-columns: repeat(8, 1fr)
+      grid-template-rows: 285px 307px 307px
+      gap: 24px 30px
+
+
+    &__item:nth-child(3)
+      grid-column: span 4
+
+
+    &__item:nth-child(4),
+    &__item:nth-child(5)
+      grid-column: span 5
+
+
+    &__item:nth-last-child(2)
+      grid-column: 6 / 9
+      grid-row: 2
+
+
+    &__item:nth-child(5)
+      grid-column: 4 / 9
+
+    &__item:last-child
+      grid-row: 3
+
+    &__card-big
+      padding: 31px 268px 30px 30px
+
+  .card-big
+    &__title
+      margin-bottom: 6px
+
+  .card-1
+    background-image: url(../img/proj-tablet-1.jpg)
+
+  .card-2
+    background-image: url(../img/proj-tablet-2.jpg)
+
+  .card-3
+    background-image: url(../img/proj-tablet-3.jpg)
+
+  .card-4
+    background-image: url(../img/proj-tablet-6.jpg)
+
+  .card-5
+    background-image: url(../img/proj-tablet-7.jpg)
+
+  .card-big-1
+    background-image: url(../img/proj-tablet-4.jpg)
+
+  .card-big-2
+    background-image: url(../img/proj-tablet-5.jpg)
+
+  // contacts
+  .contacts-left
+    display: flex
+    flex-direction: column-reverse
+    width: 61.2%
+    background-image: url(../img/map-tablet.jpg)
+
+    &__title
+      display: block
+
+    &__address
+      padding: 23px 240px 24px 30px
+      height: 34.1%
+      width: 100%
+
+    &__text
+      display: inline
+
+  .contacts-right
+    width: 35.5%
+
+  // footer
+  .footer
+    padding: 23px 0
+
+  .footer-left
+    padding-top: 5px
+    margin-right: 14%
+    &__logo
+      svg
+        width: 166px
+        height: 27px
+
+@media (max-width: 1023px)
+  .container
+    max-width: 744px
+
+  //header
+  .header
+    position: relative
+
+    &__logo
+      margin-right: auto
+
+  .nav
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    padding: 12px 0
+    background-color: $darkGrey
+
+    &__list
+      margin: 0 auto
+
+    &__item:not(:last-child)
+      margin-right: 72px
+  // hero
+  .hero
+    padding: 81px 0 68px
+
+  .hero-left
+    padding: 223px 30px 30px 29px
+    background-image: url(../img/hero-mini-tablet-1.jpg)
+
+    &__text
+      margin-bottom: 15px
+
+    &__title
+      line-height: 90%
+
+  .hero-card
+    &__title
+      margin-bottom: 15px
+      font-size: 22px
+
+  //info
+  .info
+    padding: 30px 0 63px
+
+  .info-right
+    padding-top: 626px
+    background-image: url(../img/info-mini-tablet.jpg)
+
+  .form-info
+    &__input
+      flex-basis: 100%
+
+  // projects
+  .projects
+
+    &__list
+      grid-template-columns: repeat(6, 1fr)
+      grid-template-rows: 300px 300px 307px 300px
+
+
+    &__item:nth-child(-n + 3)
+      grid-column: span 2
+
+
+    &__item:last-child,
+    &__item:nth-last-child(2)
+      grid-row: 3
+      grid-column: span 3
+
+
+    &__item:nth-child(4),
+    &__item:nth-child(5)
+      grid-column: span 6
+
+    &__card-big
+      padding: 31px 390px 30px 30px
+
+  .card-1
+    background-image: url(../img/proj-mini-tablet-1.jpg)
+
+  .card-2
+    background-image: url(../img/proj-mini-tablet-2.jpg)
+
+  .card-3
+    background-image: url(../img/proj-mini-tablet-3.jpg)
+
+  .card-4
+    background-image: url(../img/proj-mini-tablet-6.jpg)
+
+  .card-5
+    background-image: url(../img/proj-mini-tablet-7.jpg)
+
+  .card-big-1
+    background-image: url(../img/proj-mini-tablet-4.jpg)
+
+  .card-big-2
+    background-image: url(../img/proj-mini-tablet-5.jpg)
+
+  // contacts
+  .contacts-wrap
+    flex-direction: column
+
+  .contacts-left
+    margin-bottom: 30px
+    width: 100%
+    background-image: url(../img/map-mini-tablet.jpg)
+
+    &__address
+      padding: 23px 240px 27px 30px
+      height: 50%
+
+    &__text
+      display: block
+
+  .contacts-right
+    width: 65.5%
+
+  // footer
+  .footer-left
+    margin-right: auto
+
+  .footer-copy
+    display: none
+
+@media (max-width: 767px)
+  .container
+    padding: 0 21px
+    max-width: 320px
+
+  // header
+  .header
+    &__logo
+      svg
+        width: 112px
+        height: 18px
+    &__btn
+      width: 20px
+      height: 20px
+      svg
+        width: 20px
+        height: 20px
+
+    &__nav
+      padding: 13px 21px 13px
+
+    &__container
+      max-width: 100%
+
+    &__burger
+      display: block
+      position: relative
+      width: 20px
+      height: 18px
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 2px
+        background: $white
+
+
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 50%
+        height: 2px
+        background: $white
+
+    &__burger-line
+      position: absolute
+      top: 8px
+      left: 0
+      width: 100%
+      height: 2px
+      background: $white
+
+  .nav
+    &__list
+      display: none
+
+  // hero
+  .hero
+    grid-template-columns: 1fr
+    padding: 74px 0 56px
+
+  .hero-left
+    padding: 234px 46px 40px 29px
+    background-image: url(../img/hero-mobile-1.jpg)
+
+    &__text
+      margin-bottom: 10px
+      font-size: 14px
+
+    &__title
+      margin-bottom: 23px
+      font-size: 24px
+      line-height: 110%
+
+    &__btn
+      padding: 12px 23px
+      font-size: 14px
+
+    &::before
+      top: 5px
+      right: 5px
+      padding: 4px 7px
+      font-size: 12px
+
+  .hero-card
+    &__title
+      font-size: 18px
+      line-height: 104%
+  // info
+  .info
+    padding: 30px 0 60px
+
+    &__container
+      grid-template-columns: 1fr
+      grid-gap: 22px
+
+    &__title
+      margin-bottom: 6px
+      font-size: 18px
+      line-height: 23px
+
+    &__descr
+      font-size: 14px
+      line-height: 25px
+
+  .info-right
+    padding-top: 305px
+    background-image: url(../img/info-mobile.jpg)
+    background-position: top
+
+    &__title
+      font-size: 18px
+
+  .form-info
+    &__input
+      padding: 12px 23px
+      margin-bottom: 16px
+
+    &__btn
+      padding: 12px 22px
+      font-size: 14px
+
+  // projects
+  .projects
+    padding: 50px 0 20px
+
+    &__title
+      margin-bottom: 18px
+      font-size: 18px
+
+    &__list
+      grid-template-rows: 297px 278px 278px 425px 297px  297px 423px
+
+    &__card
+      &::before
+        padding: 4px 14px
+        font-size: 12px
+
+    &__card-big
+      padding: 198px 30px 30px
+
+      &::before
+        padding: 4px 14px
+        font-size: 12px
+
+    &__item:nth-child(-n+3)
+      grid-column: span 6
+
+    &__item:nth-last-child(2)
+      grid-column: span 6
+      grid-row: 5
+
+    &__item:last-child
+      grid-column: span 6
+      grid-row: 6
+
+  .card-big
+    &__date
+      margin-bottom: 11px
+
+    &__title
+      margin-bottom: 8px
+
+    &__text
+      font-size: 14px
+      line-height: 18px
+
+    &__btn
+      padding: 10px 19px
+      font-size: 14px
+
+  .card-1
+    background-image: url(../img/proj-mobile-1.jpg)
+
+  .card-2
+    background-image: url(../img/proj-mobile-2.jpg)
+
+  .card-3
+    background-image: url(../img/proj-mobile-3.jpg)
+
+  .card-4
+    background-image: url(../img/proj-mobile-6.jpg)
+
+  .card-5
+    background-image: url(../img/proj-mobile-7.jpg)
+
+  .card-big-1
+    background-image: url(../img/proj-mobile-4.jpg)
+
+  .card-big-2
+    background-image: url(../img/proj-mobile-5.jpg)
+
+  // contacts
+  .contacts
+    padding: 23px 0 47px
+
+    &__title
+      margin-bottom: 15px
+      font-size: 18px
+
+    &__container
+      position: relative
+
+  .contacts-left
+    position: absolute
+    left: 0
+    width: 100vw
+    background-image: url(../img/map-mobile.jpg)
+
+    &__address
+      padding: 26px 34px 14px 19px
+
+    &__title
+      margin-bottom: 10px
+      font-size: 18px
+
+    &__text
+      margin-bottom: 5px
+      font-size: 14px
+      line-height: 18px
+
+    &__phone
+      font-size: 14px
+
+  .contacts-right
+    padding: 495px 0 0
+    width: 100%
+
+    &__subtitle
+      margin-bottom: 8px
+      font-size: 18px
+
+    &__text
+      font-size: 14px
+      line-height: 18px
+  .form-contacts
+    &__input,
+    &__textarea
+      padding: 12px 23px
+
+    &__btn
+      padding: 12px 22px
+      font-size: 14px
+
+  // footer
+  .footer
+    position: relative
+    padding: 33px 0 92px
+
+    &__container
+      justify-content: center
+
+  .footer-left
+    position: absolute
+    bottom: 0
+    padding: 14px 0 15px
+    width: 100%
+    background-color: $darkGrey
+    text-align: center
+
+    &__logo
+      margin-bottom: -5px
+
+      svg
+        width: 112px
+        height: 18px
+
+    &__text
+      font-size: 10px

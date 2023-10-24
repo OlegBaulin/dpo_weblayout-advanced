@@ -1,0 +1,93 @@
+@mixin title
+  margin: 0
+  font-weight: 700
+  font-size: 24px
+  font-family: 'TTFirsNeue'
+
+@mixin before
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 7px 14px
+  background-color: $black
+  color: $white
+  font-family: 'Roboto'
+  font-weight: 400
+  font-size: 14px
+
+@mixin date
+  &__date
+    font-size: 12px
+    color: #999999
+    svg
+      margin-right: 3px
+      transform: translateY(2px)
+
+@mixin btnFocus
+  &:focus
+    outline: 3px solid $orangeActive
+    outline-offset: -3px
+    background-color: $orange
+
+@mixin btnTranspFocus
+  &:focus
+    background-color: $orangeDark
+
+@mixin btnHover
+  &:hover
+    background-color: $orangeDark
+
+@mixin btnTranspHover
+  &:hover
+    background-color: $orange
+
+@mixin btnActive
+  &:active
+    background-color: $orangeActive
+
+@mixin btnTranspActive
+  &:active
+    border-color: $orangeActive
+    background-color: $orangeActive
+
+@mixin linkFocus
+  &:focus
+    background-color: $orangeDark
+
+@mixin linkHover
+  &:hover
+    color: $orange
+
+@mixin linkActive
+  &:active
+    color: $orangeActive
+
+@mixin socialFocus
+  &:focus
+    svg
+      fill: $orangeDark
+
+@mixin socialHover
+  &:hover
+    svg
+      fill: $orange
+
+@mixin socialActive
+  &:active
+    svg
+      fill: $orangeActive
+
+@mixin inputFocus
+  &:focus-visible
+    outline: 1px solid $orange
+    outline-offset: -1px
+
+@mixin inputHover
+  &:hover::placeholder
+    color: $orange
+
+@mixin inputActive
+  &:active
+    outline: none
+    color: #000
